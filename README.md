@@ -1,6 +1,6 @@
 # SpecJumpCdc
 
-A high-performance .NET 10 implementation of **Speculative Jump Content-Defined Chunking (JC)** based on the research paper:
+A high-performance .NET 10 implementation of **[Speculative Jump Content-Defined Chunking (JC)](https://ieeexplore.ieee.org/document/11323127)** based on the research paper:
 
 > *Xiaozhong Jin, Haikun Liu, Chencheng Ye, Xiaofei Liao, Hai Jin, and Yu Zhang*, **"Accelerating Content-Defined Chunking for Data Deduplication Based on Speculative Jump"**, *IEEE Transactions on Parallel and Distributed Systems (TPDS)*, Vol. 34, No. 9, September 2023.
 
