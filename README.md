@@ -58,7 +58,7 @@ Evaluated across incremental revisions with offset insertions, deletions, in-pla
 | | **256 KB** | 3.47x | **3.65x** | **+5.14%** | 5,986 MB/s |
 | **Shakespeare (5 Identical)** | **16 KB** | 5.00x | **5.00x** | **0.00%** | 5,900 MB/s |
 
-*All real-world deduplication deviations remain strictly within the research paper's requirement of $< 1.00\%$, with SpecJump outperforming FastCDC on large binary presets by +5%.*
+*All real-world deduplication deviations remain strictly within the research paper's requirement of < 1.00\%, with SpecJump outperforming FastCDC on large binary presets by +5%.*
 
 ---
 
