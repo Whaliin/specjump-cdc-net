@@ -15,7 +15,7 @@ Content-Defined Chunking (CDC) is widely used in data deduplication, cloud backu
 1. **Speculative Jumps**:
    Instead of inspecting every byte sequentially, the algorithm checks a lightweight **jump condition** (`fp & maskJ == 0`). When a candidate boundary pattern is detected but fails the full cut test, the sliding window leaps forward by `jumpLength` ($c_{avg} / 2$) bytes, bypassing redundant rolling hash calculations over non-boundary regions.
 2. **Embedded Dual Masks**:
-   `maskJ` is constructed by clearing a single set bit from `maskC` (`maskJ = maskC & (maskC - 1)`), guaranteeing $(mask_C \ \& \ mask_J) == mask_J$. This embeds the cut condition directly into the jump condition, eliminating redundant hash checks for >99.9% of sliding window positions.
+   `maskJ` is constructed by clearing a single set bit from `maskC` (`maskJ = maskC & (maskC - 1)`), guaranteeing `(mask_C & mask_J) == mask_J`. This embeds the cut condition directly into the jump condition, eliminating redundant hash checks for >99.9% of sliding window positions.
 3. **64-Bit Bulk Reads & Pre-Shifted Lookup Table (`GearLsTable`)**:
    - Instead of single-byte memory loads, 8 bytes are read into CPU registers at once (`Unsafe.ReadUnaligned<ulong>`), eliminating memory load instruction bottlenecks.
    - A companion pre-shifted Gear table (`GearLsTable[b] = GearTable[b] << 1`) in `.rdata` allows evaluating byte pairs with **50% fewer bit-shifts**.
