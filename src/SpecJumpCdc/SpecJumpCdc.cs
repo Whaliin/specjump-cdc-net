@@ -43,7 +43,7 @@ public static partial class SpecJumpCdc
 	/// <param name="source">The stream to read.</param>
 	/// <param name="options">The chunking options, or <see langword="null"/> to use <see cref="SpecJumpCdcOptions.Default4KB"/>.</param>
 	/// <param name="bufferSize">The internal read buffer size in bytes, or 0 to use twice the maximum chunk size.</param>
-	/// <returns>A sequence of <see cref="Chunk"/> instances read from the stream.</returns>
+	/// <returns>A sequence of <see cref="T:SpecJumpCdc.Chunk"/> instances read from the stream.</returns>
 	public static IEnumerable<Chunk> Chunk(
 		Stream source,
 		SpecJumpCdcOptions? options = null,
@@ -115,7 +115,7 @@ public static partial class SpecJumpCdc
 	/// <param name="source">The stream to read.</param>
 	/// <param name="options">The chunking options, or <see langword="null"/> to use <see cref="SpecJumpCdcOptions.Default4KB"/>.</param>
 	/// <param name="bufferSize">The internal read buffer size in bytes, or 0 to use twice the maximum chunk size.</param>
-	/// <returns>A sequence of <see cref="ChunkData"/> instances read from the stream.</returns>
+	/// <returns>A sequence of <see cref="T:SpecJumpCdc.ChunkData"/> instances read from the stream.</returns>
 	public static IEnumerable<ChunkData> ChunkData(
 		Stream source,
 		SpecJumpCdcOptions? options = null,

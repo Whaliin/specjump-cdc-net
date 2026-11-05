@@ -1,9 +1,37 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+
+    <!-- Assembly & Package Identity -->
+    <PackageId>SpecJumpCdc</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Whaliin</Authors>
+    <Company>Whaliin</Company>
+    <Title>SpecJumpCdc</Title>
+    <Description>High-performance Speculative Jump Content-Defined Chunking (JC) for .NET 10, delivering ~10 GB/s chunking throughput and boundary-shift resilient data deduplication.</Description>
+    <PackageTags>cdc;content-defined-chunking;deduplication;fastcdc;specjump;rolling-hash;storage;backup</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/Whaliin/specjump-cdc-net</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Whaliin/specjump-cdc-net</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+
+    <!-- Documentation & Packaging -->
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+    <None Include="..\..\LICENSE" Pack="true" PackagePath="\" />
+  </ItemGroup>
 
 </Project>
