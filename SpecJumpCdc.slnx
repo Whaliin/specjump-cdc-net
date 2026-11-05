@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/benchmarks/">
+    <Project Path="benchmarks/SpecJumpCdc.Benchmark/SpecJumpCdc.Benchmark.csproj" />
+    <Project Path="benchmarks/SpecJumpCdc.Deduplication/SpecJumpCdc.Deduplication.csproj" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/SpecJumpCdc/SpecJumpCdc.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/SpecJumpCdc.Tests/SpecJumpCdc.Tests.csproj" />
+  </Folder>
+</Solution>

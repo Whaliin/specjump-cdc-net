@@ -1,0 +1,58 @@
+## Visual Studio temporary files, build results, and caches
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+bld/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio & IDE directories
+.vs/
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Benchmark & Deduplication Artifacts
+BenchmarkDotNet.Artifacts/
+**/BenchmarkDotNet.Artifacts/
+Deduplication.Artifacts/
+**/Deduplication.Artifacts/
+
+# Test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.coverage
+*.coveragexml
+
+# Temporary build files
+*.tmp
+*.tmp_proj
+*.log
+*.tlog
+*.binlog
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+**/packages/*
+!**/packages/build/
+
+# JetBrains Rider
+*.sln.iml
+.idea/
